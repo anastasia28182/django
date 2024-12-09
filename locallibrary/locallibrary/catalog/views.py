@@ -39,6 +39,7 @@ class AuthorDetailView(generic.DetailView):
 
 class AuthorListView(generic.ListView):
     model = Author
+    paginate_by = 2
     template_name = 'catalog/author_list.html'
     context_object_name = 'author_list'
 
